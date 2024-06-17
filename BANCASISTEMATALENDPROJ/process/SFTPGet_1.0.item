@@ -13,13 +13,14 @@
     <contextParameter comment="Lista di tutti i postfissi filtrare" internalId="_ZYVxcConEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Lista di tutte le estensioni da filtrare" internalId="_OHEW0CiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Lista di stringhe che non devono essere contenute nei nomi files da filtrare" internalId="_sfS5gCiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Lista di nomi files da escludere" internalId="_TA-nwCyNEe-LbuZpDIC8TA" name="nameExcludeList" prompt="nameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Regola regex che si può passare manualmente o generare dalle liste sopra per determinare i filtri" internalId="_rbzUQCghEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Offset in giorni rispetto ad oggi per ottenere la data con cui filtrare" internalId="_ijjIYClZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="Formato della data da usare come filtro" internalId="_Il6HUCotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dd-MM-yyyy"/>
     <contextParameter comment="Data che si può passare o generare dai parametri sopra, da sostituire al placeholder se presente" internalId="_xKBQwiggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Placeholder utilizzabile nelle liste sopra o nella regexRule per filtrare una data" internalId="_ZYVxcSonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]"/>
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato più di X minuti fa" internalId="_wAWJMCpgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
-    <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJMSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="1440"/>
+    <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJMSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
     <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_hrJXICyCEe-LbuZpDIC8TA" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/FTP02Cucm/logs/[date] - LOGFILEFTP02CUCM.csv"/>
     <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_hrJXISyCEe-LbuZpDIC8TA" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/FTP02Cucm/logs/[date] - Talend_LOGFILEFTP02CUCM.csv"/>
   </context>
@@ -37,6 +38,7 @@
     <contextParameter comment="" internalId="_ZYVxcionEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_OHEW0yiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_sfS5gSiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Lista di nomi files da escludere" internalId="_TA-nwSyNEe-LbuZpDIC8TA" name="nameExcludeList" prompt="nameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_rbzUQSghEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_ijjvcClZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
     <contextParameter comment="" internalId="_Il6HUSotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -61,6 +63,7 @@
     <contextParameter comment="" internalId="_ZYVxdConEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_OHEW1iiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_sfS5giiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Lista di nomi files da escludere" internalId="_TA-nwiyNEe-LbuZpDIC8TA" name="nameExcludeList" prompt="nameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_rbzUQighEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_ijjvcSlZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_Il6HUiotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dd-MM-yyyy"/>
@@ -284,7 +287,7 @@
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="output_row.currentFile = &quot;&quot;;&#10;output_row.check = true;&#10;&#10;Pattern p = Pattern.compile(context.regexRule);&#10;Matcher m = p.matcher(input_row.currentFile);&#10;&#10;&#10;if( m.matches() ) {&#10;&#10;&#9;output_row.currentFile = input_row.currentFile;&#10;}&#10;else {&#10;&#10;&#9;output_row.check = false;&#10;}"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="output_row.currentFile = &quot;&quot;;&#10;output_row.check = true;&#10;&#10;Pattern p = Pattern.compile(context.regexRule);&#10;Matcher m = p.matcher(input_row.currentFile);&#10;&#10;&#10;if( m.matches() ) {&#10;&#10;&#9;output_row.currentFile = input_row.currentFile;&#10;}&#10;else {&#10;&#10;&#9;output_row.check = false;&#10;}&#10;&#10;//CHECKING EXLUDE NAMES&#10;String fileName = input_row.currentFile.contains(&quot;.&quot;) ? input_row.currentFile.substring(0, input_row.currentFile.lastIndexOf('.')) : input_row.currentFile;&#10;&#10;String[] excludeArray = context.nameExcludeList.split(context.separator);&#10;&#10;for (String exclude : excludeArray) {&#10;if (exclude.equals(fileName)) {&#10;output_row.check = false;&#10;break;&#10;}&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.regex.Pattern;&#10;import java.util.regex.Matcher;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
@@ -768,13 +771,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_55a42573-b978-4f47-9484-9f8a8a7bd473"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I44fbbL8b5HltMLWA3XAdIU/Wl8sd5aWY6vVQjwcTVgM6qMphGVVOk+fVX3KGOwMCZob4SYZfYIn&#13;
-RV+OX8jFXw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fa55a5d3-eb98-455a-92d1-91d93c29597b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sAOcVE5rPpynvvf6mkliyGvI4ouCZ5Hajb0ZsCSPj7Klpfpq6M91A0C69czqt/K6TnQ9TGXGwyrW&#13;
-kcVdJRPqbg==</DigestValue></Reference></SignedInfo><SignatureValue>CEndj5r7+uSt43gxAAksf+Or4Jomi3Bsmhb1lgX106FnkpjI3c3S92kIfsiplD61epT8zkAsgNEi&#13;
-DBiotw58qK6f8nkyXHmToBgOhqujZ1gYHfsDkOHPUYrjyGqpS7MmvUP4Lk0vt3zWvFBfinWa9Pwv&#13;
-Q41g1Li4CpOxDAaqidMhUQUR0Hc9NVeVO6nC/Fv8Tg5FrBfgqhq7jOC20HcvAP2ebHdyCviV+rzT&#13;
-lEJLeWQr1b4nDHALlcYkmqvwqvZYT8fZBIEofvVQ6ZyfkNNzgu5uV3+qKVgzie+ev21edP3QoD3o&#13;
-BGZ96NgrHRyGy6gDRYOV+88yIWmVF9fiOME6Vg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4b5f6d79-e73c-4c7e-ba80-5e08318188cb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>miFpX2xxJpth3tJoi2RyBPVDwhIVw/4B30m4B2AeXIEMCmrpTowuf/Ythr+OdqCXbGRp8BQ8BHLg&#13;
+rGglriwt6w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2906db60-dcd0-4e08-a186-0a8375e52b2b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uHDPrfIySuYaQHjxDglT1rdDGuVPJeg1GOH+RYbYaG0VqyDjd/2yyVk6OATg9QoPjnDb80jseRHo&#13;
+AaRYDgE0xQ==</DigestValue></Reference></SignedInfo><SignatureValue>cPgg3b1zlpM7nQ4ch67P5WHZ932tMocxYgMe+aU7aH528sQmzskrY3bOH3yBrktTXKvzh/Y2uQqe&#13;
+l7nFljJ5ProFGhKz5bA21et+NZYy+sXVI/vP7V9glNIP19K+W+VK6RLv989C1mi2uSxchKxR7i4k&#13;
+UnzktvPcovzphu/f3zJgUWGPlw5B1Ud8DYJTeWoZVHtYhwvaYanEd8If2qHGkYFK7jl08+2U2KPl&#13;
+C7HGJj/zRbZNjQu8rzxmp5FH2BR63gShHUtMXattqj3HXTp+scgi9NfzY5HPl8vt1otHRZqxi/eP&#13;
+PcUALPcwKzamv3DbMWvevsBbs2z+/emhvqCorw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -796,4 +799,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fa55a5d3-eb98-455a-92d1-91d93c29597b" Target="#_55a42573-b978-4f47-9484-9f8a8a7bd473"><Timestamp>2024-06-17 09:01:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2906db60-dcd0-4e08-a186-0a8375e52b2b" Target="#_4b5f6d79-e73c-4c7e-ba80-5e08318188cb"><Timestamp>2024-06-17 09:53:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
