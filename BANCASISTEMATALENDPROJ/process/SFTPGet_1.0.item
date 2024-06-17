@@ -3,25 +3,25 @@
     <contextParameter comment="" internalId="_YxZpECouEe-ig5i9tnRMbA" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo.iceinformatics.com"/>
     <contextParameter comment="" internalId="_YxZpESouEe-ig5i9tnRMbA" name="connection_sftp_port" prompt="connection_sftp_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_YxZpEiouEe-ig5i9tnRMbA" name="connection_sftp_username" prompt="connection_sftp_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sftp_user"/>
-    <contextParameter comment="" internalId="_YxZpEyouEe-ig5i9tnRMbA" name="connection_sftp_password" prompt="connection_sftp_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:2OxYAdb+vwZ+1xilZ1TZ9XMGCP04laqT+PLB+fxscuFxRqTzmQsa44lNt50g"/>
+    <contextParameter comment="" internalId="_YxZpEyouEe-ig5i9tnRMbA" name="connection_sftp_password" prompt="connection_sftp_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ADDqLKMQLzCyf5CJf164n68Z1bhijJU22hvVd6rgd5oKP9O5AuX9vrLrXaC9"/>
     <contextParameter comment="" internalId="_YxZpFCouEe-ig5i9tnRMbA" name="connection_sftp_encoding" prompt="connection_sftp_encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SSH"/>
     <contextParameter comment="" internalId="_YxZpFSouEe-ig5i9tnRMbA" name="connection_sftp_auth_method" prompt="connection_sftp_auth_method?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="password"/>
-    <contextParameter comment="" internalId="_IymTUCgbEe-Jdfr95QyjhA" name="localPath" prompt="localPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/Backup_FTP02_CUCM"/>
-    <contextParameter comment="" internalId="_IymTUSgbEe-Jdfr95QyjhA" name="remotePath" prompt="remotePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/C:/src/backup_ftp02_cucm"/>
-    <contextParameter comment="" internalId="_OHEW0SiNEe-nyftTplCIPg" name="startingNameList" prompt="startingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_ZYVxcConEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_OHEW0CiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_sfS5gCiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_OHEW0iiNEe-nyftTplCIPg" name="separator" prompt="separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=";"/>
-    <contextParameter comment="" internalId="_rbzUQCghEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_ijjIYClZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_Il6HUCotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dd-MM-yyyy"/>
-    <contextParameter comment="" internalId="_xKBQwiggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_ZYVxcSonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]"/>
-    <contextParameter comment="" internalId="_wAWJMCpgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
-    <contextParameter comment="" internalId="_wAWJMSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="5"/>
+    <contextParameter comment="Description" internalId="_IymTUCgbEe-Jdfr95QyjhA" name="localPath" prompt="localPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/Backup_FTP02_CUCM"/>
+    <contextParameter comment="Description" internalId="_IymTUSgbEe-Jdfr95QyjhA" name="remotePath" prompt="remotePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/C:/src/backup_ftp02_cucm"/>
+    <contextParameter comment="Description" internalId="_OHEW0SiNEe-nyftTplCIPg" name="startingNameList" prompt="startingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Description" internalId="_ZYVxcConEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Description" internalId="_OHEW0CiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Description" internalId="_sfS5gCiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Description" internalId="_OHEW0iiNEe-nyftTplCIPg" name="separator" prompt="separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=";"/>
+    <contextParameter comment="Description" internalId="_rbzUQCghEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Description" internalId="_ijjIYClZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="Description" internalId="_Il6HUCotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dd-MM-yyyy"/>
+    <contextParameter comment="Description" internalId="_xKBQwiggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Description" internalId="_ZYVxcSonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]"/>
+    <contextParameter comment="Description" internalId="_wAWJMCpgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+    <contextParameter comment="Description" internalId="_wAWJMSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="999999"/>
   </context>
-  <context confirmationNeeded="false" hide="false" name="production">
+  <context confirmationNeeded="false" hide="true" name="production">
     <contextParameter comment="" internalId="_YxZpFiouEe-ig5i9tnRMbA" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_YxZpFyouEe-ig5i9tnRMbA" name="connection_sftp_port" prompt="connection_sftp_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
     <contextParameter comment="" internalId="_YxZpGCouEe-ig5i9tnRMbA" name="connection_sftp_username" prompt="connection_sftp_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -43,27 +43,27 @@
     <contextParameter comment="" internalId="_wAWJMipgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
     <contextParameter comment="" internalId="_wAWJMypgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
   </context>
-  <context confirmationNeeded="false" hide="false" name="test">
-    <contextParameter comment="" internalId="_YxZpHCouEe-ig5i9tnRMbA" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_YxZpHSouEe-ig5i9tnRMbA" name="connection_sftp_port" prompt="connection_sftp_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" internalId="_YxZpHiouEe-ig5i9tnRMbA" name="connection_sftp_username" prompt="connection_sftp_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_YxZpHyouEe-ig5i9tnRMbA" name="connection_sftp_password" prompt="connection_sftp_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
-    <contextParameter comment="" internalId="_YxZpICouEe-ig5i9tnRMbA" name="connection_sftp_encoding" prompt="connection_sftp_encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_YxZpISouEe-ig5i9tnRMbA" name="connection_sftp_auth_method" prompt="connection_sftp_auth_method?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_IymTVCgbEe-Jdfr95QyjhA" name="localPath" prompt="localPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_IymTVSgbEe-Jdfr95QyjhA" name="remotePath" prompt="remotePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  <context confirmationNeeded="false" hide="true" name="test">
+    <contextParameter comment="" internalId="_YxZpHCouEe-ig5i9tnRMbA" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo.iceinformatics.com"/>
+    <contextParameter comment="" internalId="_YxZpHSouEe-ig5i9tnRMbA" name="connection_sftp_port" prompt="connection_sftp_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="22"/>
+    <contextParameter comment="" internalId="_YxZpHiouEe-ig5i9tnRMbA" name="connection_sftp_username" prompt="connection_sftp_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sftp_user"/>
+    <contextParameter comment="" internalId="_YxZpHyouEe-ig5i9tnRMbA" name="connection_sftp_password" prompt="connection_sftp_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:6w7mVfUJNuUpVfC9OOERcSgS0lreBp/YztmFfXq5C7z2k2ll/gDcHTBY6BDN"/>
+    <contextParameter comment="" internalId="_YxZpICouEe-ig5i9tnRMbA" name="connection_sftp_encoding" prompt="connection_sftp_encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SSH"/>
+    <contextParameter comment="" internalId="_YxZpISouEe-ig5i9tnRMbA" name="connection_sftp_auth_method" prompt="connection_sftp_auth_method?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="password"/>
+    <contextParameter comment="" internalId="_IymTVCgbEe-Jdfr95QyjhA" name="localPath" prompt="localPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/Backup_FTP02_CUCM"/>
+    <contextParameter comment="" internalId="_IymTVSgbEe-Jdfr95QyjhA" name="remotePath" prompt="remotePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/C:/src/backup_ftp02_cucm"/>
     <contextParameter comment="" internalId="_OHEW1yiNEe-nyftTplCIPg" name="startingNameList" prompt="startingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_ZYVxdConEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_OHEW1iiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_sfS5giiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_OHEW2CiNEe-nyftTplCIPg" name="separator" prompt="separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_OHEW2CiNEe-nyftTplCIPg" name="separator" prompt="separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=";"/>
     <contextParameter comment="" internalId="_rbzUQighEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_ijjvcSlZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" internalId="_Il6HUiotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_ijjvcSlZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_Il6HUiotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dd-MM-yyyy"/>
     <contextParameter comment="" internalId="_xKBQyCggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_ZYVxdSonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_ZYVxdSonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]"/>
     <contextParameter comment="" internalId="_wAWJNCpgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
-    <contextParameter comment="" internalId="_wAWJNSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+    <contextParameter comment="" internalId="_wAWJNSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="5"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -371,7 +371,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="output_row.basename = input_row.basename;&#13;&#10;output_row.mtime = input_row.mtime;&#10;output_row.check = true;&#10;&#10;long nowTime = (long) globalMap.get(&quot;now_mTime&quot;);&#10;&#10;if ( context.olderThanMinutes != null) {&#10;&#10;&#9;long olderTime = context.olderThanMinutes*60*1000;&#10;&#10;&#9;Date olderThanDate = new Date(nowTime-olderTime);&#10;&#10;&#9;System.out.println(&quot;File must be older than: &quot;+olderThanDate);&#10;&#9;&#10;&#9;if( input_row.mtime &gt;= (nowTime-olderTime) ) {&#10;&#9;&#10;&#9;&#9;output_row.check = false;&#10;&#9;}&#10;&#10;}&#10;&#10;if ( context.youngerThanMinutes != null) {&#10;&#10;&#9;long youngerTime = context.youngerThanMinutes*60*1000;&#10;&#10;&#9;Date youngerThanDate = new Date(nowTime-youngerTime);&#10;&#10;&#9;System.out.println(&quot;File must be younger than: &quot;+youngerThanDate);&#10;&#9;&#10;&#9;if( input_row.mtime &lt;= (nowTime-youngerTime) ) {&#10;&#9;&#10;&#9;&#9;output_row.check = false;&#10;&#9;}&#10;&#10;}"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="output_row.basename = input_row.basename;&#13;&#10;output_row.mtime = input_row.mtime;&#10;output_row.check = true;&#10;&#10;input_row.mtime = input_row.mtime*1000;&#10;&#10;long nowTime = (long) globalMap.get(&quot;now_mTime&quot;);&#10;&#10;if ( context.olderThanMinutes != null) {&#10;&#10;&#9;long olderTime = context.olderThanMinutes*60*1000;&#10;&#10;&#9;Date olderThanDate = new Date(nowTime-olderTime);&#10;&#10;&#9;System.out.println(&quot;File must be older than: &quot;+olderThanDate);&#10;&#9;&#10;&#9;if( input_row.mtime &gt;= (nowTime-olderTime) ) {&#10;&#9;&#10;&#9;&#9;output_row.check = false;&#10;&#9;}&#10;&#10;}&#10;&#10;if ( context.youngerThanMinutes != null) {&#10;&#10;&#9;long youngerTime = context.youngerThanMinutes*60*1000;&#10;&#10;&#9;Date youngerThanDate = new Date(nowTime-youngerTime);&#10;&#10;&#9;System.out.println(&quot;File must be younger than: &quot;+youngerThanDate);&#10;&#9;&#9;&#10;&#9;if( input_row.mtime &lt;= (nowTime-youngerTime) ) {&#10;&#9;&#10;&#9;&#9;output_row.check = false;&#10;&#9;}&#10;&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.Date;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -478,7 +478,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;now_mTime&quot;"/>
-      <elementValue elementRef="VALUE" value="System.currentTimeMillis() / 1000"/>
+      <elementValue elementRef="VALUE" value="System.currentTimeMillis()"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_1"/>
@@ -585,13 +585,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5b301863-27e3-46f9-b354-00878484668c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MIMbT1rKX7QwhoOua8TJEi0H41tqXBo+1qVO9+VUJy21I3RLO5zYuVOKsTSTu70LMECljwo1B+Gq&#13;
-ju5rhtkGOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4cc890b8-a518-415a-a653-dbbdff668b4d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pbKTXKulWBQDvqyCVhHwdkigTI0H8afMS2/HiPsOzy5ixTKA9rW9se217tzY/CwlosEGvKSnYyWh&#13;
-kPXhpjyDJA==</DigestValue></Reference></SignedInfo><SignatureValue>KyUXRJxF3zGAfbhS8d29eRCvmtdsBUExSEw0raXjU4Jzxw6JGvuyrLnjbFZJXfg0/XWjzDw8e8sG&#13;
-az4LbnjFTviLgerSbigJib7llhiRwJhxgSsYLl1hfVUiZyqP/Ax7HB83RASvVda3dRF57CrZ/6Xa&#13;
-nkZuZYgH7p6r82EbDrQn9feMuP649oVMA13AxKTlAdYh28f4yReBy0wnf3I+kHJnGwhUFbH/wfi9&#13;
-0rsISQVBkOUbuhq78qw9HsfyazcObYAlKBO73iUXe+4nODz+GqT1c5akzq0+d+n66vs4TeYjDY1i&#13;
-6eh5+x3Ia8vfd8GwGJYrT3iBNImmo0DUP2jOuA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2de2e1a1-663b-4e9a-9d2d-510f570269b0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AYiJmnt4CWIKR9J2k6JcIw0JXiiXmKw88jyEQL4C6vRBVQA3xJi3/hOJdOJdqzsm4i0nThANVVKl&#13;
+mU4HMKcKqw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eec7965c-0562-4d77-8139-f27977be89df"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>x8AAs8KAdvYh8VD9kOWsot7laCnUK/M4Q5E+sllcRdU4BAM4Z417qA8xBmT1ohYazXZVWKelAzhC&#13;
+EIGLkWO26A==</DigestValue></Reference></SignedInfo><SignatureValue>WOmKs/Wl0R6H5TEEuJ5j63CpdrQ0jFQ2awRcTmQpvhVUuwdn9LXwJ90y4h9FrNNOqlJQj7LmWlTa&#13;
+gESpFbUde5kHKY2j5+Hw4j97Ms8L2mJ5glGQ1bDg09FlLfJN1FVkObsql1mywdiAoqcVn1SD0F+w&#13;
+vbf6L8vf2/pMzfz2Quq7JNvNMXjUuUfnNez3Q3iKSMKf/q4wJqJj362dMTs0Ge8XZHSOmbgqobto&#13;
+DG4pnIBIgthVg1z/dSFrMxQitvWI1WZN6YlUwYkeoEU6gCxfLP2i0A49VMkqBZDoQRCXroTzxV6f&#13;
+Up/C8B6v9A6k9bpV+sR2WUBsC8dMC44E5tQyAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -613,4 +613,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4cc890b8-a518-415a-a653-dbbdff668b4d" Target="#_5b301863-27e3-46f9-b354-00878484668c"><Timestamp>2024-06-14 16:04:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eec7965c-0562-4d77-8139-f27977be89df" Target="#_2de2e1a1-663b-4e9a-9d2d-510f570269b0"><Timestamp>2024-06-17 07:44:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
