@@ -19,7 +19,9 @@
     <contextParameter comment="Data che si può passare o generare dai parametri sopra, da sostituire al placeholder se presente" internalId="_xKBQwiggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Placeholder utilizzabile nelle liste sopra o nella regexRule per filtrare una data" internalId="_ZYVxcSonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]"/>
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato più di X minuti fa" internalId="_wAWJMCpgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
-    <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJMSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+    <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJMSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="1440"/>
+    <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_hrJXICyCEe-LbuZpDIC8TA" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/Backup_FTP02_CUCM/logs/[date] - LOGFILEFTP02CUCM.csv"/>
+    <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_hrJXISyCEe-LbuZpDIC8TA" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/Backup_FTP02_CUCM/logs/[date] - Talend_LOGFILEFTP02CUCM.csv"/>
   </context>
   <context confirmationNeeded="false" hide="true" name="production">
     <contextParameter comment="" internalId="_YxZpFiouEe-ig5i9tnRMbA" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -42,6 +44,8 @@
     <contextParameter comment="" internalId="_ZYVxcyonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato più di X minuti fa" internalId="_wAWJMipgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJMypgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
+    <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_hrJXIiyCEe-LbuZpDIC8TA" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_hrJXIyyCEe-LbuZpDIC8TA" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" hide="true" name="test">
     <contextParameter comment="" internalId="_YxZpHCouEe-ig5i9tnRMbA" name="connection_sftp_host" prompt="connection_sftp_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="demo.iceinformatics.com"/>
@@ -64,6 +68,8 @@
     <contextParameter comment="" internalId="_ZYVxdSonEe-ig5i9tnRMbA" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]"/>
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato più di X minuti fa" internalId="_wAWJNCpgEe-4d8Sa4VUp4A" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJNSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="5"/>
+    <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_hrJXJCyCEe-LbuZpDIC8TA" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_hrJXJSyCEe-LbuZpDIC8TA" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -167,8 +173,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="80">
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="TEXT" name="HOST" value="context.connection_sftp_host"/>
     <elementParameter field="TEXT" name="PORT" value="context.connection_sftp_port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
@@ -200,25 +207,26 @@
     <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="680">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="1080">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="360" posY="680">
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="360" posY="1080">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPClose_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="240">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//SETTING DATE FILTERS&#10;//IF dateToUse is set, use it, otherwise generate it&#10;&#10;if( context.dateToUse.length() == 0) {&#10;&#10;&#9;context.dateToUse = TalendDate.formatDate(context.dateFormat, TalendDate.addDate(TalendDate.getCurrentDate(), context.todayDaysOffset, &quot;dd&quot;));&#10;}&#10;&#10;System.out.println(&quot;Dates placeholder is: \&quot;&quot;+context.datePlaceholder+&quot;\&quot; and the date filter is set on: \&quot;&quot;+context.dateToUse+&quot;\&quot;&quot;);&#10;&#10;//SETTING REGEX RULE&#10;//IF regexRyle is set, use it, otherwise generate it&#10;&#10;if( context.regexRule.length() == 0) {&#10;&#10;&#9;//APPLYING DATA PLACEHOLDER&#10;&#9;String prefixList = context.startingNameList.replace(context.datePlaceholder, context.dateToUse);&#10;&#9;String postfixList = context.endingNameList.replace(context.datePlaceholder, context.dateToUse);&#10;&#9;String excludeList = context.containsNameExcludeList.replace(context.datePlaceholder, context.dateToUse);&#10;&#9;String extensionList = context.extensionList.replace(context.datePlaceholder, context.dateToUse);&#10;&#10;&#9;prefixList = &quot;\\Q&quot;+String.join(&quot;\\E|\\Q&quot;, prefixList.split(context.separator) )+&quot;\\E&quot;;&#10;&#9;postfixList = &quot;\\Q&quot;+String.join(&quot;\\E|\\Q&quot;, postfixList.split(context.separator) )+&quot;\\E&quot;;&#10;&#9;excludeList = &quot;\\Q&quot;+String.join(&quot;\\E|\\Q&quot;, excludeList.split(context.separator) )+&quot;\\E&quot;;&#10;&#9;extensionList = &quot;\\Q&quot;+String.join(&quot;\\E|\\Q&quot;, extensionList.split(context.separator) )+&quot;\\E&quot;;&#9;&#10;&#9;&#10;&#9;// Combinazione delle stringhe in una regex   &#10;    &#10;    if(prefixList.equals(&quot;\\Q\\E&quot;) ) {&#10;    &#10;    &#9;context.regexRule += &quot;&quot;;    &#10;    }&#10;    else {&#10;    &#10;    &#9;context.regexRule += &quot;^(?:&quot; + prefixList + &quot;)&quot;;&#10;    }&#10;        &#10;    &#10;    if(excludeList.equals(&quot;\\Q\\E&quot;) ) {&#10;    &#10;    &#9;context.regexRule += &quot;.*&quot;;    &#10;    }&#10;    else {&#10;    &#10;    &#9;context.regexRule += &quot;(?:(?!&quot; + excludeList + &quot;).)*&quot;;&#10;    }&#10;    &#10;    &#10;    &#10;    &#10;    if(postfixList.equals(&quot;\\Q\\E&quot;) ) {&#10;    &#10;    &#9;context.regexRule += &quot;&quot;;    &#10;    }&#10;    else {&#10;    &#10;    &#9;context.regexRule += &quot;(?:&quot; + postfixList + &quot;)&quot;;&#10;    }&#10;    &#10;    &#10;    &#10;    &#10;    if(extensionList.equals(&quot;\\Q\\E&quot;) ) {&#10;    &#10;    &#9;context.regexRule += &quot;\\..*&quot;;    &#10;    }&#10;    else {&#10;    &#10;    &#9;context.regexRule += &quot;\\.(?:&quot; + extensionList + &quot;)$&quot;;&#10;    }&#10;    &#10;}&#10;else {&#10;&#10;&#9;//APPLYING DATA PLACEHOLDER&#10;&#9;context.regexRule.replace(context.datePlaceholder, context.dateToUse);&#10;}&#10;&#10;//context.regexRule = context.regexRule.replace(&quot;(?:\\Q\\E)&quot;, &quot;.*&quot;);&#10;&#10;System.out.println(&quot;Regex rule in use: \&quot;&quot;+context.regexRule+&quot;\&quot;&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tFTPFileList" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="200" posY="480">
+  <node componentName="tFTPFileList" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="200" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPFileList_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -261,7 +269,7 @@
     <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="480">
+  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tIterateToFlow_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="TABLE" name="MAPPING">
@@ -273,8 +281,9 @@
       <column comment="" key="false" length="-1" name="currentFile" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="480">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="output_row.currentFile = &quot;&quot;;&#10;output_row.check = true;&#10;&#10;Pattern p = Pattern.compile(context.regexRule);&#10;Matcher m = p.matcher(input_row.currentFile);&#10;&#10;&#10;if( m.matches() ) {&#10;&#10;&#9;output_row.currentFile = input_row.currentFile;&#10;}&#10;else {&#10;&#10;&#9;output_row.check = false;&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.regex.Pattern;&#10;import java.util.regex.Matcher;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -283,8 +292,9 @@
       <column comment="" key="false" length="-1" name="check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="480">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="680" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFilterRow_10"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
     <elementParameter field="TABLE" name="CONDITIONS">
       <elementValue elementRef="INPUT_COLUMN" value="check"/>
@@ -309,7 +319,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="480">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="false"/>
@@ -320,7 +330,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
-  <node componentName="tFTPFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="480">
+  <node componentName="tFTPFileProperties" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPFileProperties_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -369,8 +379,9 @@
       <column defaultValue="" key="false" length="20" name="mtime_string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="480">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="output_row.basename = input_row.basename;&#13;&#10;output_row.mtime = input_row.mtime;&#10;output_row.check = true;&#10;&#10;input_row.mtime = input_row.mtime*1000;&#10;&#10;long nowTime = (long) globalMap.get(&quot;now_mTime&quot;);&#10;&#10;if ( context.olderThanMinutes != null) {&#10;&#10;&#9;long olderTime = context.olderThanMinutes*60*1000;&#10;&#10;&#9;Date olderThanDate = new Date(nowTime-olderTime);&#10;&#10;&#9;System.out.println(&quot;File must be older than: &quot;+olderThanDate);&#10;&#9;&#10;&#9;if( input_row.mtime &gt;= (nowTime-olderTime) ) {&#10;&#9;&#10;&#9;&#9;output_row.check = false;&#10;&#9;}&#10;&#10;}&#10;&#10;if ( context.youngerThanMinutes != null) {&#10;&#10;&#9;long youngerTime = context.youngerThanMinutes*60*1000;&#10;&#10;&#9;Date youngerThanDate = new Date(nowTime-youngerTime);&#10;&#10;&#9;System.out.println(&quot;File must be younger than: &quot;+youngerThanDate);&#10;&#9;&#9;&#10;&#9;if( input_row.mtime &lt;= (nowTime-youngerTime) ) {&#10;&#9;&#10;&#9;&#9;output_row.check = false;&#10;&#9;}&#10;&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.Date;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -380,8 +391,9 @@
       <column comment="" key="false" length="-1" name="check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="480">
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFilterRow_13"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
     <elementParameter field="TABLE" name="CONDITIONS">
       <elementValue elementRef="INPUT_COLUMN" value="check"/>
@@ -409,8 +421,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="480">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1360" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_2"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="false"/>
     <elementParameter field="TABLE" name="MAP">
       <elementValue elementRef="KEY" value="&quot;basename&quot;"/>
@@ -419,7 +432,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_2"/>
   </node>
-  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1480" posY="480">
+  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1480" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPGet_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -474,8 +487,17 @@
       <column comment="" key="false" length="-1" name="check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="240">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1480" posY="760">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWarn_2"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;File da spostare: &quot;+((String)globalMap.get(&quot;basename&quot;))"/>
+    <elementParameter field="TEXT" name="CODE" value="200"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="3"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_2"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="TABLE" name="VARIABLES">
       <elementValue elementRef="KEY" value="&quot;now_mTime&quot;"/>
       <elementValue elementRef="VALUE" value="System.currentTimeMillis()"/>
@@ -483,7 +505,142 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSetGlobalVar_1"/>
   </node>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFTPConnection_1">
+  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="200" posY="920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStatCatcher_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tStatCatcher_1">
+      <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job_repository_id" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job_version" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message_type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.talendLogDirectory.replace(context.datePlaceholder,  TalendDate.formatDate(&quot;yyyy_MM_dd&quot;, TalendDate.getCurrentDate()) )"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="system_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job_repository_id" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job_version" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message_type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.logDirectory.replace(context.datePlaceholder,  TalendDate.formatDate(&quot;yyyy_MM_dd&quot;, TalendDate.getCurrentDate()) )"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tFTPClose_1">
@@ -536,15 +693,28 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
   </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tFTPGet_1">
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFlowToIterate_2" target="tFTPGet_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate3"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tFTPFileList_1">
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFlowToIterate_2" target="tWarn_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tFTPConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
   </connection>
-  <note opaque="true" posX="560" posY="40" sizeHeight="361" sizeWidth="681" text="Questo blocco di codice imposta i filtri per la data e la regola regex per il processo.&#13;&#10;Se 'dateToUse' non è impostato, viene generata una data basata sulla data corrente&#13;&#10;e un offset di giorni specificato.&#13;&#10;La data generata viene formattata e utilizzata come filtro.&#13;&#10;&#13;&#10;Successivamente, se 'regexRule' non è impostata, viene generata una nuova regola regex.&#13;&#10;La regola regex è costruita sostituendo i segnaposto di data nei parametri forniti con la data generata.&#13;&#10;Le liste modificate vengono quindi unite in una regex che verifica che il nome del file&#13;&#10;1) Inizi con uno dei prefissi&#13;&#10;2) Non contenga nessuno degli elementi esclusi prima dell'ultimo punto&#13;&#10;3) Contenga uno dei postfix subito prima dell'ultimo punto&#13;&#10;4) Termini con una delle estensioni specificate.&#13;&#10;&#13;&#10;Se 'regexRule' è già impostata, viene solo aggiornata sostituendo il segnaposto di data&#13;&#10;con la data generata.&#13;&#10;&#13;&#10;Prima di concludere, se sono stati assegnati dei minuti per il controllo dell'ultima data&#13;&#10;di modifica, vengono effettuati dei filtri sui file prima di trasferirli"/>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tFileOutputDelimited_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
+  </connection>
+  <note opaque="true" posX="160" posY="200" sizeHeight="361" sizeWidth="681" text="Questo blocco di codice imposta i filtri per la data e la regola regex per il processo.&#13;&#10;Se 'dateToUse' non è impostato, viene generata una data basata sulla data corrente&#13;&#10;e un offset di giorni specificato.&#13;&#10;La data generata viene formattata e utilizzata come filtro.&#13;&#10;&#13;&#10;Successivamente, se 'regexRule' non è impostata, viene generata una nuova regola regex.&#13;&#10;La regola regex è costruita sostituendo i segnaposto di data nei parametri forniti con la data generata.&#13;&#10;Le liste modificate vengono quindi unite in una regex che verifica che il nome del file&#13;&#10;1) Inizi con uno dei prefissi&#13;&#10;2) Non contenga nessuno degli elementi esclusi prima dell'ultimo punto&#13;&#10;3) Contenga uno dei postfix subito prima dell'ultimo punto&#13;&#10;4) Termini con una delle estensioni specificate.&#13;&#10;&#13;&#10;Se 'regexRule' è già impostata, viene solo aggiornata sostituendo il segnaposto di data&#13;&#10;con la data generata.&#13;&#10;&#13;&#10;Prima di concludere, se sono stati assegnati dei minuti per il controllo dell'ultima data&#13;&#10;di modifica, vengono effettuati dei filtri sui file prima di trasferirli"/>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
@@ -552,8 +722,9 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
   <subjob>
@@ -563,13 +734,15 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPClose_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
   <subjob>
@@ -578,17 +751,30 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
   <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f396551c-85e6-49d7-a37f-f0cd9aa6c30c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TzekNhHG9bqnImcwrIba7VLseKZVAKHQjmSjEZRZrVYsoy1zA0W/1FwP3UqtRtCCkosXSk8CTkvn&#13;
-pd1FTMieug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e1900ecd-9691-4d97-b3d2-0fe52bce2eed"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HuVdgvcT4ClgLSLVsq0c3d7su3XYj1q/Gy2UfS4BihyKj8ttCR531WZsZIPj+4Xe5SdtgNvrW8gw&#13;
-Ow8b8gcUeA==</DigestValue></Reference></SignedInfo><SignatureValue>hbcRQ6Hf6fM7f+C2zpuC9yIsw4dpWcVh2slTqcHHO8zr3JZRFU5VOAF2IMdvJkJih2+EMrPrzAtn&#13;
-Uu3EVGQR1kCS6/dL1hyE/+drkE8o7rhJio1bdRXUb4CQLWh5lWeDpit4jKHuDNN6qmci2OMaCmde&#13;
-SVedPd0fs3B50LcvEuzclVCK7WXvh1AAVyU5QRdxFoqhuBnGyAzKr+SaRF+pfPlfJEadWZ+SPI0U&#13;
-pQ9OU9ORBPM9XdGs0cOZjCNdBo/TyyRoHPQbwGu9Ow1zZvqUGTh1bs+tgC/OQY83i6OC0gcmJ9jl&#13;
-1PEa20yHtagxBTbsbVm1j/jyGJki8sJCacorZg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStatCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c57485a5-6dd4-4db2-828c-c9f6ef720aee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NRYVg71hf983EulODkXQjaH1qcPCztOX/aAKycoN2wl/EnzTCeM5vKszQfyoG9jnLMFkaCgMa/TU&#13;
+XdzmhAJQbw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a0de81bf-ce28-40d2-a2d4-7db165c76af0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t4xZGQDB5OUywJaPHRs3EUOxPrP9W5tQiDdlOZK7C9ayqbNvV7nB6mVIuc3GJBVrb0UDSB9ialfs&#13;
+y3FBk6x4dQ==</DigestValue></Reference></SignedInfo><SignatureValue>mlFDrUgp3TocBMcE0pbUgzuqfygFJZfN5Rdje0adsPuJXPwo7yia/qWvYGOItTRTOzh92eHdRKDH&#13;
+sOAYBJ47LJ4wk1bJQ4H6LsNJrOctPjWV66GWC9zJPE29ENaeWNYhk5BGqDXN+64Z4MfvSaB4wJs+&#13;
+R+c0BnyEq+N4rKdtb0I0ZABHOgtK4eHQMoXvIQFEMfbwaCKKEKXel9U/5ipKVioDGbtqCJYStwva&#13;
+zaRNKHVD03MH0YJPJwMyO6fYNpYy7AwN/hh/SKIiF+yPY9m/pp9geduwRKOFQeDPalzpMQ4+a41I&#13;
+trurgQXlI4i0XLYLgHuDmiSZkmYOEoNpPMwRog==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -610,4 +796,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e1900ecd-9691-4d97-b3d2-0fe52bce2eed" Target="#_f396551c-85e6-49d7-a37f-f0cd9aa6c30c"><Timestamp>2024-06-17 07:55:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a0de81bf-ce28-40d2-a2d4-7db165c76af0" Target="#_c57485a5-6dd4-4db2-828c-c9f6ef720aee"><Timestamp>2024-06-17 08:43:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
