@@ -13,7 +13,7 @@
     <contextParameter comment="Data che si può passare o generare dai parametri sopra, da sostituire al placeholder se presente" internalId="_WU-56iyzEe-gS7DEqB0hHQ" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Placeholder utilizzabile nelle liste sopra o nella regexRule per filtrare una data" internalId="_WU-56yyzEe-gS7DEqB0hHQ" name="datePlaceholder" prompt="datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]"/>
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato più di X minuti fa" internalId="_WU-57CyzEe-gS7DEqB0hHQ" name="olderThanMinutes" prompt="olderThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
-    <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_WU-57SyzEe-gS7DEqB0hHQ" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="1"/>
+    <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_WU-57SyzEe-gS7DEqB0hHQ" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
     <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_WU-57iyzEe-gS7DEqB0hHQ" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/cleanseFolder/logs/[date] - LOGFILEcleanseFolder.csv"/>
     <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_WU-57yyzEe-gS7DEqB0hHQ" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/cleanseFolder/logs/[date] - Talend_LOGcleanseFolder.csv"/>
   </context>
@@ -418,7 +418,7 @@
       <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="520">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -582,13 +582,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b44c03a7-d889-41bd-a684-3481cdd596b3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>erzErlXmSdJ608B99NRmbcHcysv1XqBC/zSnL+79VtmNInaou8I+1e4JIchMXYy0WouE1EPyzif1&#13;
-p6TRhFUQtw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e1da158e-5561-4262-9ecf-118f038e33f2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>S/EjkHO6ME7DdoFzQ1pfBK33k77gvIo1WLbLahepXRoUVOlI208Yw1ozvCgvHzQjFNWEBTM43UBz&#13;
-KJMxm6lXdw==</DigestValue></Reference></SignedInfo><SignatureValue>hD1lbxQSDYfGuKxZyba2gXC7P5bI1g4G0WMgAseKNH+AGPwMnYA4cIS3O8WnX0GsDl14t8+rfoMj&#13;
-j7BVlGKYE1Sl6X28NOJCoVhIb3ajuq9BJNRSS5rpWt2ZtTsojflFZvh8LE4elL9zCtyaPFLMu65W&#13;
-Hlwrqn8nQir1RBnRRMHDsEUxbAjsnj3owV1DNOShHP3RDho4r6i86UQ1Jaf9DqL9SGy0ISvBq5tn&#13;
-+goLDf2vchey3ieaxNz5cunfCGxVWe/W78h2mMitay1h2IeIdqivSo1vH0Ug58ISWHZtHrc5NxT9&#13;
-D6aWliv2SXa4cGqtBQ4upAcAa8oQlkITcEuJDg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e0569f05-6b9a-456a-99d4-e3c63b1efc8c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yGLef/SzVAZfOfBeDHIDBJkUWkmpB/dy434/gZL4QBFU5EcYlwHYEPfAtnfKkILZIeu/ZtiAT9n1&#13;
+F8GuLxzs3Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2c2764d5-af63-427b-ac6b-0f91040a6923"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jbpuAUyeIBzkYdrm+He81d/c50FB/LvHtom3kS0rkPqmCA9bcf83JmsYMyKsIPcITJmnysxLcv6Y&#13;
+ltcCPGSGYA==</DigestValue></Reference></SignedInfo><SignatureValue>kKy9ioinD+kLC3agvLIhMSz/EIwDUn9LESptCTJX9B8VK6pPP8JgbliuUEofHmaOn5OATKsbPqSP&#13;
+l866+3WUWarvObXQ+sQwq2RqanBAW2KpZFk7EZgaOFwb8/IJi1HJtyAW7nDKNOYIVgDhCevybIzk&#13;
+r+XtmJXil5k7Hre+InDSm/sWhtyfvQi0q4F66n1pvEx0TemNZd7BrIsypSYv8skigOE3qmbx4cUE&#13;
+eDBi/ShchBGGyBW4KYadEnL2HpRytjUslKX8pOthZ+Jsaj1/cVnZUfjwEBfxSGnex2JvLmeKAHG7&#13;
+l2dTH+mfKPtl9216Xo3HVHlk/UpEDAAuYkfgiA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -610,4 +610,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e1da158e-5561-4262-9ecf-118f038e33f2" Target="#_b44c03a7-d889-41bd-a684-3481cdd596b3"><Timestamp>2024-06-17 14:25:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2c2764d5-af63-427b-ac6b-0f91040a6923" Target="#_e0569f05-6b9a-456a-99d4-e3c63b1efc8c"><Timestamp>2024-06-17 14:27:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
