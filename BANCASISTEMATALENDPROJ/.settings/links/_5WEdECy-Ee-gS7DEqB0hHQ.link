@@ -24,6 +24,9 @@
     }, {
       "id" : "_krv48C1UEe-PQq5u-BUFng",
       "name" : "fileFilter_dateFormat"
+    }, {
+      "id" : "_qylasC1cEe-PQq5u-BUFng",
+      "name" : "fileFilter_renameFileDelimiter"
     } ]
   }, {
     "contextName" : "Default",
@@ -65,6 +68,9 @@
     }, {
       "id" : "_krv48C1UEe-PQq5u-BUFng",
       "name" : "fileFilter_dateFormat"
+    }, {
+      "id" : "_qylasC1cEe-PQq5u-BUFng",
+      "name" : "fileFilter_renameFileDelimiter"
     } ]
   }, {
     "contextName" : "production",
@@ -106,6 +112,9 @@
     }, {
       "id" : "_krv48S1UEe-PQq5u-BUFng",
       "name" : "fileFilter_dateFormat"
+    }, {
+      "id" : "_qylasS1cEe-PQq5u-BUFng",
+      "name" : "fileFilter_renameFileDelimiter"
     } ]
   }, {
     "contextName" : "test",
