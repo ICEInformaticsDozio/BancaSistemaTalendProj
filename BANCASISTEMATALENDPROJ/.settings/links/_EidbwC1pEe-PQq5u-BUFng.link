@@ -1,0 +1,92 @@
+{
+  "itemId" : "_EidbwC1pEe-PQq5u-BUFng",
+  "contextList" : [ {
+    "contextName" : "test",
+    "repoId" : "_oo99cC1JEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_-5lmMS1REe-PQq5u-BUFng",
+      "name" : "fileFilter_separator"
+    }, {
+      "id" : "_-5lmMi1REe-PQq5u-BUFng",
+      "name" : "fileFilter_fileName"
+    }, {
+      "id" : "_-5lmMy1REe-PQq5u-BUFng",
+      "name" : "fileFilter_excludeFileName"
+    }, {
+      "id" : "_-5lmNC1REe-PQq5u-BUFng",
+      "name" : "fileFilter_extension"
+    }, {
+      "id" : "__aSNki1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_datePlaceholder"
+    }, {
+      "id" : "__aSNky1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_todayOffset"
+    }, {
+      "id" : "_krv48S1UEe-PQq5u-BUFng",
+      "name" : "fileFilter_dateFormat"
+    }, {
+      "id" : "_qylasS1cEe-PQq5u-BUFng",
+      "name" : "fileFilter_renameFileDelimiter"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_15dI0C1ZEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_152KaC1ZEe-PQq5u-BUFng",
+      "name" : "logger_datePlaceholder"
+    }, {
+      "id" : "_152KZi1ZEe-PQq5u-BUFng",
+      "name" : "logger_talendLogFile"
+    }, {
+      "id" : "_152KZy1ZEe-PQq5u-BUFng",
+      "name" : "logger_logFile"
+    }, {
+      "id" : "_152KaS1ZEe-PQq5u-BUFng",
+      "name" : "logger_dateFormat"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_oo99cC1JEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_opWX8S1JEe-PQq5u-BUFng",
+      "name" : "fileFilter_separator"
+    }, {
+      "id" : "_opW_AC1JEe-PQq5u-BUFng",
+      "name" : "fileFilter_fileName"
+    }, {
+      "id" : "_opW_AS1JEe-PQq5u-BUFng",
+      "name" : "fileFilter_excludeFileName"
+    }, {
+      "id" : "_athEUC1LEe-PQq5u-BUFng",
+      "name" : "fileFilter_extension"
+    }, {
+      "id" : "__aSNkC1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_datePlaceholder"
+    }, {
+      "id" : "__aSNkS1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_todayOffset"
+    }, {
+      "id" : "_krv48C1UEe-PQq5u-BUFng",
+      "name" : "fileFilter_dateFormat"
+    }, {
+      "id" : "_qylasC1cEe-PQq5u-BUFng",
+      "name" : "fileFilter_renameFileDelimiter"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_15dI0C1ZEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_152KYy1ZEe-PQq5u-BUFng",
+      "name" : "logger_datePlaceholder"
+    }, {
+      "id" : "_152KYS1ZEe-PQq5u-BUFng",
+      "name" : "logger_talendLogFile"
+    }, {
+      "id" : "_152KYi1ZEe-PQq5u-BUFng",
+      "name" : "logger_logFile"
+    }, {
+      "id" : "_152KZC1ZEe-PQq5u-BUFng",
+      "name" : "logger_dateFormat"
+    } ]
+  } ]
+}
