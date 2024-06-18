@@ -13,7 +13,6 @@
     <contextParameter comment="" internalId="_loat2C1aEe-PQq5u-BUFng" name="logger_talendLogFile" prompt="logger_talendLogFile?" promptNeeded="false" repositoryContextId="_15dI0C1ZEe-PQq5u-BUFng" type="id_String" value="//demo.iceinformatics.com/sourceFolder/logs/[date]_Talendlog.csv"/>
     <contextParameter comment="" internalId="_loat2S1aEe-PQq5u-BUFng" name="logger_logFile" prompt="logger_logFile?" promptNeeded="false" repositoryContextId="_15dI0C1ZEe-PQq5u-BUFng" type="id_String" value="//demo.iceinformatics.com/sourceFolder/logs/[date]_log.csv"/>
     <contextParameter comment="" internalId="_loat2i1aEe-PQq5u-BUFng" name="logger_dateFormat" prompt="logger_dateFormat?" promptNeeded="false" repositoryContextId="_15dI0C1ZEe-PQq5u-BUFng" type="id_String" value="yyyyMMdd"/>
-    <contextParameter comment="**" internalId="_hcGzgC1cEe-PQq5u-BUFng" name="keepFileInRenameDelimeter" prompt="keepFileInRenameDelimeter?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_XCJEIC1eEe-PQq5u-BUFng" name="fileFilter_renameFileDelimiter" prompt="fileFilter_renameFileDelimiter?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="**"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="Default">
@@ -30,7 +29,6 @@
     <contextParameter comment="" internalId="_loat4y1aEe-PQq5u-BUFng" name="logger_talendLogFile" prompt="logger_talendLogFile?" promptNeeded="false" repositoryContextId="_15dI0C1ZEe-PQq5u-BUFng" type="id_String" value=""/>
     <contextParameter comment="" internalId="_loat5C1aEe-PQq5u-BUFng" name="logger_logFile" prompt="logger_logFile?" promptNeeded="false" repositoryContextId="_15dI0C1ZEe-PQq5u-BUFng" type="id_String" value=""/>
     <contextParameter comment="" internalId="_loat5S1aEe-PQq5u-BUFng" name="logger_dateFormat" prompt="logger_dateFormat?" promptNeeded="false" repositoryContextId="_15dI0C1ZEe-PQq5u-BUFng" type="id_String" value=""/>
-    <contextParameter comment="**" internalId="_hcGzgy1cEe-PQq5u-BUFng" name="keepFileInRenameDelimeter" prompt="keepFileInRenameDelimeter?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_XCJEIS1eEe-PQq5u-BUFng" name="fileFilter_renameFileDelimiter" prompt="fileFilter_renameFileDelimiter?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
   </context>
   <parameters>
@@ -258,7 +256,6 @@
   </node>
   <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="240" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tStatCatcher_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tStatCatcher_1">
       <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
@@ -279,7 +276,6 @@
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="400" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
     <elementParameter field="FILE" name="FILENAME" value="context.logger_talendLogFile.replace(context.logger_datePlaceholder,  TalendDate.formatDate(context.logger_dateFormat, TalendDate.getCurrentDate()) )"/>
@@ -327,7 +323,6 @@
   </node>
   <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
     <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
     <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
@@ -350,7 +345,6 @@
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="440">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
     <elementParameter field="FILE" name="FILENAME" value="context.logger_logFile.replace(context.logger_datePlaceholder,  TalendDate.formatDate(context.logger_dateFormat, TalendDate.getCurrentDate()) )"/>
@@ -426,12 +420,10 @@
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
   <subjob>
@@ -475,13 +467,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8965cc2d-2d65-40ef-8b94-70196349ad33"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5ihbqWEgpEyhz8M/L+8E/7dhMCdSPRyo6sLxtbVUrjdNRdaWVqkqpGzs+rb3hBzkPVLynYp5rIUO&#13;
-zAn0izdg0A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8fbecd8d-5f69-4ce0-877c-dda2443920ed"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NidLfS1yDcvSdsdlLDEwdDxS54jyJogAOf11bnV0hwb9Ra6QEi56YAtJR8stMTImmEn8QJb3xcLL&#13;
-qvdHNDZJzg==</DigestValue></Reference></SignedInfo><SignatureValue>iq6/Efjj8KqGFszZyU3EM4irn31yVCf7awCdxw+/KHyiv/n9FIB++GRD1JOmcllZ9/7K3kdit0k9&#13;
-hvxqyNpHbRHb0okiWhrZMIOLPnN6r4nAJw0kjJeyAe6PLyKwaO+jgdg6wnqiVK9o9wG9iqYGOsM7&#13;
-79+OEfMsAFd+BtMFie1NyRnOPRzJu5HyqAZnkeRbVi+B1T9Fgt07rts6Pn6PRArtPvWzv02bbFsx&#13;
-MDTlo6d4zO8nv46itwHNYGLWUauKFNpfnSKe8wzNK84dKPL13S7scZHmbGDANIQ4YtXTDMYCp0k+&#13;
-WTbsatWbaKYZqAhNxP8FL0H5roaLHSOgnLTIFw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_db0b8387-2dcf-482b-a404-c66573031e8d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IvlbBJY63SXRyfQTotza1LtBMcPxEvdybgsOkZlcoyBsErQF8NohvEkGlTKW81pMGd5g6IrmZqML&#13;
+ZMRCYsc+Tg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aa2f0944-1203-4045-a87e-2702f8ff0a44"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eqXBjwtdIQwOMK12xO/rOIlpFzejBthlTsJXt/JXWratGR1rmWJJN7th04VcNkSR1wBbbrND8ika&#13;
+eIHAquzT6g==</DigestValue></Reference></SignedInfo><SignatureValue>nsCgZ3nG+zmFWeQwjJtfmZP/uzO0D1luz/oCn5Dlqd/p57rr1rDNwuO/Ax6OqUdBMxhHPAIL900w&#13;
+RsG2rKKGKNf0r8Ij5sM2uFWlyH+3ei0XwqttC2djtPIp5ZCRUicPhsMbg7Knchhgm99TD1dlM7+0&#13;
+ZiC1TBHWIf4K7fe7IQRR38026EWXF04xnFMRvw5FxTZa16bXKKqJFySbcRYzLyQm6P7Cme69wDMI&#13;
+FIjDtIb//BuBa1iqTQM3Xbo+kkdYeLoheRD+kkV/Q9N9kJMxB5+hK2UH0XIy2lHNYpdqgjO0zEFp&#13;
+zpaKfHhj2ozZKYS6nraSYqr/jeNuIgdTsh9z3A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -503,4 +495,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8fbecd8d-5f69-4ce0-877c-dda2443920ed" Target="#_8965cc2d-2d65-40ef-8b94-70196349ad33"><Timestamp>2024-06-18 11:31:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aa2f0944-1203-4045-a87e-2702f8ff0a44" Target="#_db0b8387-2dcf-482b-a404-c66573031e8d"><Timestamp>2024-06-18 11:49:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
