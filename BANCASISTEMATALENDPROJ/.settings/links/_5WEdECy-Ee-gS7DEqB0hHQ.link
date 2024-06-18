@@ -26,6 +26,22 @@
       "name" : "fileFilter_dateFormat"
     } ]
   }, {
+    "contextName" : "Default",
+    "repoId" : "_15dI0C1ZEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_152KYy1ZEe-PQq5u-BUFng",
+      "name" : "logger_datePlaceholder"
+    }, {
+      "id" : "_152KYS1ZEe-PQq5u-BUFng",
+      "name" : "logger_talendLogFile"
+    }, {
+      "id" : "_152KYi1ZEe-PQq5u-BUFng",
+      "name" : "logger_logFile"
+    }, {
+      "id" : "_152KZC1ZEe-PQq5u-BUFng",
+      "name" : "logger_dateFormat"
+    } ]
+  }, {
     "contextName" : "production",
     "repoId" : "_oo99cC1JEe-PQq5u-BUFng",
     "parameterList" : [ {
@@ -51,6 +67,22 @@
       "name" : "fileFilter_dateFormat"
     } ]
   }, {
+    "contextName" : "production",
+    "repoId" : "_15dI0C1ZEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_152KYy1ZEe-PQq5u-BUFng",
+      "name" : "logger_datePlaceholder"
+    }, {
+      "id" : "_152KYS1ZEe-PQq5u-BUFng",
+      "name" : "logger_talendLogFile"
+    }, {
+      "id" : "_152KYi1ZEe-PQq5u-BUFng",
+      "name" : "logger_logFile"
+    }, {
+      "id" : "_152KZC1ZEe-PQq5u-BUFng",
+      "name" : "logger_dateFormat"
+    } ]
+  }, {
     "contextName" : "test",
     "repoId" : "_oo99cC1JEe-PQq5u-BUFng",
     "parameterList" : [ {
@@ -74,6 +106,22 @@
     }, {
       "id" : "_krv48S1UEe-PQq5u-BUFng",
       "name" : "fileFilter_dateFormat"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_15dI0C1ZEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_152KaC1ZEe-PQq5u-BUFng",
+      "name" : "logger_datePlaceholder"
+    }, {
+      "id" : "_152KZi1ZEe-PQq5u-BUFng",
+      "name" : "logger_talendLogFile"
+    }, {
+      "id" : "_152KZy1ZEe-PQq5u-BUFng",
+      "name" : "logger_logFile"
+    }, {
+      "id" : "_152KaS1ZEe-PQq5u-BUFng",
+      "name" : "logger_dateFormat"
     } ]
   } ]
 }
