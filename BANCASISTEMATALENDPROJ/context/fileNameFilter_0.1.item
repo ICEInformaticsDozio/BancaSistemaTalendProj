@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_opWX8C1JEe-PQq5u-BUFng">
+    <contextParameter comment="" name="fileFilter_separator" prompt="fileFilter_separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_opWX8S1JEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_fileName" prompt="fileFilter_fileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_opW_AC1JEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_excludeFileName" prompt="fileFilter_excludeFileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_opW_AS1JEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_extension" prompt="fileFilter_extension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_athEUC1LEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_datePlaceholder" prompt="fileFilter_datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="__aSNkC1TEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_todayOffset" prompt="fileFilter_todayOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="" xmi:id="__aSNkS1TEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_dateFormat" prompt="fileFilter_dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_krv48C1UEe-PQq5u-BUFng"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="test" xmi:id="_-5lmMC1REe-PQq5u-BUFng">
+    <contextParameter comment="" name="fileFilter_separator" prompt="fileFilter_separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=";" xmi:id="_-5lmMS1REe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_fileName" prompt="fileFilter_fileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="archive1_[date];archive2_[date]" xmi:id="_-5lmMi1REe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_excludeFileName" prompt="fileFilter_excludeFileName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_-5lmMy1REe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_extension" prompt="fileFilter_extension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="zip" xmi:id="_-5lmNC1REe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_datePlaceholder" prompt="fileFilter_datePlaceholder?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[date]" xmi:id="__aSNki1TEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_todayOffset" prompt="fileFilter_todayOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="__aSNky1TEe-PQq5u-BUFng"/>
+    <contextParameter comment="" name="fileFilter_dateFormat" prompt="fileFilter_dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="yyyyMMdd" xmi:id="_krv48S1UEe-PQq5u-BUFng"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_71cc2d8c-6a67-42ba-95d7-da578b930808"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oWR0Ma/ywraNkNpKFi7g3jKoiN6K6k3rISQo9zVRpDHMIoFBUaAN9W193mRPq1ooX4Z6t7yyeSbq&#13;
+aIEvWJWZ3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2f1cb78d-082a-45b1-9913-1fb4a4edc230"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xnjhm/WKw/BrM1ECc+Q2K+6Aw9aUxJ/P79zm50LEJ3GUsIwJl1iQv38/3VzKBwbt5/S4kwGU28Vp&#13;
+So0q7XR74w==</DigestValue></Reference></SignedInfo><SignatureValue>VJ5fmM4G0XuaclEXZfa2sxqyIyeNSmXogiQ65ym4jhyJEnU8FQK3LcrU69A6kpBReIYLN+bHSoGU&#13;
+u30MTLWy0OlEZ+zYU7wrBFP2vaBAaeJzZQOtFt37oKimyCmbnUTZgAOG6oQUFFyfKdXvhtvLKC0i&#13;
+mf8fjYa4X93yVLTUZNE9d4C2YaWv40/e0ObZNgiNNY+PtRGWzmS7C5srVavyWS83IlBr4JSTojL6&#13;
+XQg7xRI0B1iPMB2b+TqxBZtjsfvoZlD4mCJt7VgqUl/h8TMNxykpo9SxTIUrJxL9A70KVo83OT4E&#13;
+TwE0Gyzilrrqa7cTYms432sYGfeXr6RgGKktrQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2f1cb78d-082a-45b1-9913-1fb4a4edc230" Target="#_71cc2d8c-6a67-42ba-95d7-da578b930808"><Timestamp>2024-06-18 09:30:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

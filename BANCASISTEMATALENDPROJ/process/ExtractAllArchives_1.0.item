@@ -2,13 +2,6 @@
   <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="Cartella locale in cui verranno scaricati i file" internalId="_IymTUCgbEe-Jdfr95QyjhA" name="sourcePath" prompt="sourcePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Cartella da cui leggere i file da scaricare" internalId="_IymTUSgbEe-Jdfr95QyjhA" name="destinationPath" prompt="destinationPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Separatore utilizzato per dividere le liste sopra" internalId="_OHEW0iiNEe-nyftTplCIPg" name="separator" prompt="separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Lista di tutti i prefissi da filtrare" internalId="_OHEW0SiNEe-nyftTplCIPg" name="startingNameList" prompt="startingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Lista di tutti i postfissi filtrare" internalId="_ZYVxcConEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Lista di tutte le estensioni da filtrare" internalId="_OHEW0CiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Lista di stringhe che non devono essere contenute nei nomi files da filtrare" internalId="_sfS5gCiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Lista di nomi files da escludere" internalId="_TA-nwCyNEe-LbuZpDIC8TA" name="nameExcludeList" prompt="nameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Regola regex che si può passare manualmente o generare dalle liste sopra per determinare i filtri" internalId="_rbzUQCghEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Offset in giorni rispetto ad oggi per ottenere la data con cui filtrare" internalId="_ijjIYClZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
     <contextParameter comment="Formato della data da usare come filtro" internalId="_Il6HUCotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Data che si può passare o generare dai parametri sopra, da sostituire al placeholder se presente" internalId="_xKBQwiggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -17,17 +10,17 @@
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJMSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
     <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_hrJXICyCEe-LbuZpDIC8TA" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_hrJXISyCEe-LbuZpDIC8TA" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1AC1SEe-PQq5u-BUFng" name="fileFilter_fileName" prompt="fileFilter_fileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1AS1SEe-PQq5u-BUFng" name="fileFilter_excludeFileName" prompt="fileFilter_excludeFileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1Ai1SEe-PQq5u-BUFng" name="fileFilter_separator" prompt="fileFilter_separator?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1Ay1SEe-PQq5u-BUFng" name="fileFilter_extension" prompt="fileFilter_extension?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MbjEcC1UEe-PQq5u-BUFng" name="fileFilter_datePlaceholder" prompt="fileFilter_datePlaceholder?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MbjEcS1UEe-PQq5u-BUFng" name="fileFilter_todayOffset" prompt="fileFilter_todayOffset?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_X2H04C1VEe-PQq5u-BUFng" name="fileFilter_dateFormat" prompt="fileFilter_dateFormat?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" hide="true" name="production">
     <contextParameter comment="Cartella locale in cui verranno scaricati i file" internalId="_IymTUigbEe-Jdfr95QyjhA" name="sourcePath" prompt="sourcePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Cartella da cui leggere i file da scaricare" internalId="_IymTUygbEe-Jdfr95QyjhA" name="destinationPath" prompt="destinationPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Separatore utilizzato per dividere le liste sopra" internalId="_OHEW1SiNEe-nyftTplCIPg" name="separator" prompt="separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_OHEW1CiNEe-nyftTplCIPg" name="startingNameList" prompt="startingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_ZYVxcionEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_OHEW0yiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_sfS5gSiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Lista di nomi files da escludere" internalId="_TA-nwSyNEe-LbuZpDIC8TA" name="nameExcludeList" prompt="nameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_rbzUQSghEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_ijjvcClZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
     <contextParameter comment="" internalId="_Il6HUSotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_xKBQxSggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -36,17 +29,17 @@
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJMypgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value=""/>
     <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_hrJXIiyCEe-LbuZpDIC8TA" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_hrJXIyyCEe-LbuZpDIC8TA" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1BC1SEe-PQq5u-BUFng" name="fileFilter_fileName" prompt="fileFilter_fileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1BS1SEe-PQq5u-BUFng" name="fileFilter_excludeFileName" prompt="fileFilter_excludeFileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1Bi1SEe-PQq5u-BUFng" name="fileFilter_separator" prompt="fileFilter_separator?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1By1SEe-PQq5u-BUFng" name="fileFilter_extension" prompt="fileFilter_extension?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MbjEci1UEe-PQq5u-BUFng" name="fileFilter_datePlaceholder" prompt="fileFilter_datePlaceholder?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_MbjEcy1UEe-PQq5u-BUFng" name="fileFilter_todayOffset" prompt="fileFilter_todayOffset?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_X2H04S1VEe-PQq5u-BUFng" name="fileFilter_dateFormat" prompt="fileFilter_dateFormat?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" hide="false" name="test">
-    <contextParameter comment="Cartella locale in cui verranno scaricati i file" internalId="_IymTVCgbEe-Jdfr95QyjhA" name="sourcePath" prompt="sourcePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/archive1"/>
-    <contextParameter comment="Cartella da cui leggere i file da scaricare" internalId="_IymTVSgbEe-Jdfr95QyjhA" name="destinationPath" prompt="destinationPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/archive2"/>
-    <contextParameter comment="Separatore utilizzato per dividere le liste sopra" internalId="_OHEW2CiNEe-nyftTplCIPg" name="separator" prompt="separator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=";"/>
-    <contextParameter comment="" internalId="_OHEW1yiNEe-nyftTplCIPg" name="startingNameList" prompt="startingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_ZYVxdConEe-ig5i9tnRMbA" name="endingNameList" prompt="endingNameList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_OHEW1iiNEe-nyftTplCIPg" name="extensionList" prompt="extensionList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="zip"/>
-    <contextParameter comment="" internalId="_sfS5giiNEe-nyftTplCIPg" name="containsNameExcludeList" prompt="containsNameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="Lista di nomi files da escludere" internalId="_TA-nwiyNEe-LbuZpDIC8TA" name="nameExcludeList" prompt="nameExcludeList?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_rbzUQighEe-bLYm0YfZsLg" name="regexRule" prompt="regexRule?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="Cartella locale in cui verranno scaricati i file" internalId="_IymTVCgbEe-Jdfr95QyjhA" name="sourcePath" prompt="sourcePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//demo.iceinformatics.com/sourceFolder/archive1"/>
+    <contextParameter comment="Cartella da cui leggere i file da scaricare" internalId="_IymTVSgbEe-Jdfr95QyjhA" name="destinationPath" prompt="destinationPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//demo.iceinformatics.com/sourceFolder/archive2"/>
     <contextParameter comment="" internalId="_ijjvcSlZEe-HetIwX2BHNQ" name="todayDaysOffset" prompt="todayDaysOffset?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
     <contextParameter comment="" internalId="_Il6HUiotEe-ig5i9tnRMbA" name="dateFormat" prompt="dateFormat?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dd-MM-yyyy"/>
     <contextParameter comment="" internalId="_xKBQyCggEe-bLYm0YfZsLg" name="dateToUse" prompt="dateToUse?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -55,6 +48,13 @@
     <contextParameter comment="Per leggere il file, questo deve essere stato modificato meno di X minuti fa" internalId="_wAWJNSpgEe-4d8Sa4VUp4A" name="youngerThanMinutes" prompt="youngerThanMinutes?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="5"/>
     <contextParameter comment="Directory del file di log del programma (con placeholder per data attuale)" internalId="_hrJXJCyCEe-LbuZpDIC8TA" name="logDirectory" prompt="logDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/archive1/logs/[date] - LOGFILEArchive.csv"/>
     <contextParameter comment="Directory del file di log generato da Talend (con placeholder per data attuale)" internalId="_hrJXJSyCEe-LbuZpDIC8TA" name="talendLogDirectory" prompt="talendLogDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/BancaSistemaTest/archive1/logs/[date] - Talend_LOGFILEArchive.csv"/>
+    <contextParameter comment="" internalId="_IrK1CC1SEe-PQq5u-BUFng" name="fileFilter_fileName" prompt="fileFilter_fileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="archive1_[date];archive2_[date]"/>
+    <contextParameter comment="" internalId="_IrK1CS1SEe-PQq5u-BUFng" name="fileFilter_excludeFileName" prompt="fileFilter_excludeFileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_IrK1Ci1SEe-PQq5u-BUFng" name="fileFilter_separator" prompt="fileFilter_separator?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=";"/>
+    <contextParameter comment="" internalId="_IrK1Cy1SEe-PQq5u-BUFng" name="fileFilter_extension" prompt="fileFilter_extension?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="zip"/>
+    <contextParameter comment="" internalId="_MbjEdC1UEe-PQq5u-BUFng" name="fileFilter_datePlaceholder" prompt="fileFilter_datePlaceholder?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="[date]"/>
+    <contextParameter comment="" internalId="_MbjEdS1UEe-PQq5u-BUFng" name="fileFilter_todayOffset" prompt="fileFilter_todayOffset?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_X2H04i1VEe-PQq5u-BUFng" name="fileFilter_dateFormat" prompt="fileFilter_dateFormat?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="yyyyMMdd"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -154,8 +154,8 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
   </parameters>
-  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="360">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.sourcePath"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
@@ -177,71 +177,56 @@
     <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="360">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tIterateToFlow_1"/>
+  <node componentName="tIterateToFlow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tIterateToFlow_2"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="filePath"/>
-      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tFileList_2_CURRENT_FILEPATH&quot;))"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tIterateToFlow_1">
+    <metadata connector="FLOW" name="tIterateToFlow_2">
       <column comment="" key="false" length="-1" name="filePath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="360">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="output_row.filePath = input_row.filePath;&#10;output_row.check = false;&#10;&#10;String actualExtension = input_row.filePath.substring(input_row.filePath.lastIndexOf('.') + 1).toUpperCase();&#10;String[] extensionList = context.extensionList.split(context.separator);&#10;&#10;&#10;for (String validExtension : extensionList) {&#10;&#10;&#9;if (actualExtension.equals(validExtension.toUpperCase())) {&#10;&#10;&#9;&#9;output_row.check = true;&#10;&#9;&#9;break;&#10;&#9;}&#10;}"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.regex.Pattern;&#10;import java.util.regex.Matcher;"/>
+  <node componentName="fileNameFilter" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="fileNameFilter_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJavaRow_1">
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="fileNameFilter_1">
       <column comment="" key="false" length="-1" name="filePath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT_1" name="OUTPUT_1">
+      <column comment="" key="false" length="-1" name="filePath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="360">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFilterRow_9"/>
-    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
-    <elementParameter field="TABLE" name="CONDITIONS">
-      <elementValue elementRef="INPUT_COLUMN" value="check"/>
-      <elementValue elementRef="FUNCTION" value=""/>
-      <elementValue elementRef="OPERATOR" value="=="/>
-      <elementValue elementRef="RVALUE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" show="false" value="input_row.filePath.substring(input_row.filePath.lastIndexOf('.') + 1).toUpperCase().equals(&quot;ZIP&quot;)"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFilterRow_9">
-      <column comment="" key="false" length="-1" name="filePath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FILTER" name="FILTER">
-      <column comment="" key="false" length="-1" name="filePath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="filePath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="360">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_2"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="false"/>
     <elementParameter field="TABLE" name="MAP">
       <elementValue elementRef="KEY" value="&quot;filePath&quot;"/>
       <elementValue elementRef="VALUE" value="filePath"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2">
+      <column comment="" key="false" length="-1" name="filePath" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
-  <node componentName="tFileUnarchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="360">
+  <node componentName="tFileUnarchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileUnarchive_1"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="FILE" name="ZIPFILE" value="((String)globalMap.get(&quot;filePath&quot;))"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.destinationPath"/>
-    <elementParameter field="CHECK" name="ROOTNAME" value="true"/>
+    <elementParameter field="CHECK" name="ROOTNAME" value="false"/>
     <elementParameter field="CHECK" name="INTEGRITY" value="false"/>
     <elementParameter field="CHECK" name="EXTRACTPATH" value="true"/>
     <elementParameter field="CHECK" name="CHECKPASSWORD" value="false"/>
@@ -253,45 +238,36 @@
     <elementParameter field="TEXT" name="ENCORDING" show="false" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tIterateToFlow_1">
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tIterateToFlow_2">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate3"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tIterateToFlow_1" offsetLabelX="0" offsetLabelY="0" source="tIterateToFlow_1" target="tJavaRow_1">
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tIterateToFlow_2" offsetLabelX="0" offsetLabelY="0" source="tIterateToFlow_2" target="fileNameFilter_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tFilterRow_9">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="check"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="OUTPUT_1" label="row5" lineStyle="0" metaname="OUTPUT_1" offsetLabelX="0" offsetLabelY="0" source="fileNameFilter_1" target="tFlowToIterate_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
-  <connection connectorName="FILTER" label="row2" lineStyle="0" metaname="FILTER" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_9" target="tFlowToIterate_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tFileUnarchive_1">
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tFileUnarchive_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
   </connection>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3d55cfa6-d358-4044-9881-013b840c33d1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cXMKN3j5O7dYCgbNa5X1xpZ+thPM2R51AY3pERzebPrOuvve2LiNXcwy3Ga4o8Iz/wMq+YFOwv1k&#13;
-I1MurTZPOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8ce11ad2-9b7c-44da-a8ec-525731acba8e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z2U46TI7BNCbobW8h5JLtcCNigKWpXjFL+JodCtoDTvwwtzGrSvVou3OSLdELfrO75qOwNC5vUvG&#13;
-QrlmrT3oMw==</DigestValue></Reference></SignedInfo><SignatureValue>Ff96wG/wzosb5h8h78B4cQJwp39lediA6u2iTPYGjg5LBRVmYlwtzPy/+lUGhagQDUewY8EwHAOl&#13;
-0z11r+iRPF12q6W4i+UG8ScCt1d6HbSuXgrpDSX8Pl8SQVKFvHGRRkHQyyvS4JEAgegCyCZFdofA&#13;
-2HQRPfMGoKmEDzaZEyfwjcOA24kkbQ5i8YRdRa/MtrVOvtcq5qbvzJ8aEWOAH5g7zOwHzZ2OZEAd&#13;
-MKYf3SX4tWXTwDH88CE3dXpq7lJkcqwTWMFKA0LUZxr7IKzUx897upLfqE+JN/iER/V42g0ujlOz&#13;
-wlH/yX7FHR93SnVAkNkAjvao2ZoeDdmXf3/Amw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d6e8e17b-5906-4727-b79e-f7b5a531e213"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kOjagtQfcwtDmzTKM+sOMl9T37kyqNEk+aaJMVsOoFYzN0BG/O1GRNP3Tqd0N4zNRW1UEaMM+zoX&#13;
+4CHWef0+2g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3e99a324-ef8b-41cc-9fb5-53a82b60ab92"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>x1L6V/gNY/SrrXBKH7CWD3oGDHl4tm6rWelgTD7bufpEtAODIwdMor+CnLiSCw+jIWxecvYm82Zd&#13;
+3eZIeWuzEQ==</DigestValue></Reference></SignedInfo><SignatureValue>bMAClC8HPzo5cl76OYIIqHKrLMW5XMpyt8YybKaTtLiBocHLJHqvCDdTNZyNRcEX/W7J9vMZr2C+&#13;
+UHCwB14xFQO4DEVcqY+St7/x0puhFK2NZvLBK+Wy5evGCOdt/fMC5TMrm2aqHWgzPN5I/ymBqaCU&#13;
+fs5KjdIPdwETw20tQ7izFqRpPiCVLEfnQSvnkOzikroldLope+COIVJcap0lXNiaANgV/19unLpQ&#13;
+EdmFbxBFMwNOpVpwLExGs+e0pNGznRxcuZBv4+LQ2Uj3y2cmogg6Jz9jMBV2gYQ8MDJW2Q8m806f&#13;
+fOgdCoJJqga3Y1ZKksIJRWrIk42wHHtVtLdL0A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -313,4 +289,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8ce11ad2-9b7c-44da-a8ec-525731acba8e" Target="#_3d55cfa6-d358-4044-9881-013b840c33d1"><Timestamp>2024-06-17 16:33:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3e99a324-ef8b-41cc-9fb5-53a82b60ab92" Target="#_d6e8e17b-5906-4727-b79e-f7b5a531e213"><Timestamp>2024-06-18 09:43:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
