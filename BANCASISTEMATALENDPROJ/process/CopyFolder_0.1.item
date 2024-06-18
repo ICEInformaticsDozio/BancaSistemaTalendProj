@@ -3,9 +3,9 @@
     <contextParameter comment="" internalId="_hcFlYC1cEe-PQq5u-BUFng" name="sourcePath" prompt="sourcePath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//demo.iceinformatics.com/sourceFolder/archive2"/>
     <contextParameter comment="" internalId="_hcFlYS1cEe-PQq5u-BUFng" name="destinationPath" prompt="destinationPath?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="//demo.iceinformatics.com/sourceFolder/archive3"/>
     <contextParameter comment="" internalId="_loat0C1aEe-PQq5u-BUFng" name="fileFilter_separator" prompt="fileFilter_separator?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=";"/>
-    <contextParameter comment="" internalId="_loat0S1aEe-PQq5u-BUFng" name="fileFilter_fileName" prompt="fileFilter_fileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="file**1**;file**2**;file4;file5"/>
+    <contextParameter comment="" internalId="_loat0S1aEe-PQq5u-BUFng" name="fileFilter_fileName" prompt="fileFilter_fileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
     <contextParameter comment="" internalId="_loat0i1aEe-PQq5u-BUFng" name="fileFilter_excludeFileName" prompt="fileFilter_excludeFileName?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_loat0y1aEe-PQq5u-BUFng" name="fileFilter_extension" prompt="fileFilter_extension?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="txt;xml;csv"/>
+    <contextParameter comment="" internalId="_loat0y1aEe-PQq5u-BUFng" name="fileFilter_extension" prompt="fileFilter_extension?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value=""/>
     <contextParameter comment="" internalId="_loat1C1aEe-PQq5u-BUFng" name="fileFilter_datePlaceholder" prompt="fileFilter_datePlaceholder?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="[date]"/>
     <contextParameter comment="" internalId="_loat1S1aEe-PQq5u-BUFng" name="fileFilter_todayOffset" prompt="fileFilter_todayOffset?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_Integer" value="-1"/>
     <contextParameter comment="" internalId="_loat1i1aEe-PQq5u-BUFng" name="fileFilter_dateFormat" prompt="fileFilter_dateFormat?" promptNeeded="false" repositoryContextId="_oo99cC1JEe-PQq5u-BUFng" type="id_String" value="yyyyMMdd"/>
@@ -427,7 +427,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
@@ -467,13 +467,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;128;192"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="128;255;255"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_db0b8387-2dcf-482b-a404-c66573031e8d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IvlbBJY63SXRyfQTotza1LtBMcPxEvdybgsOkZlcoyBsErQF8NohvEkGlTKW81pMGd5g6IrmZqML&#13;
-ZMRCYsc+Tg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aa2f0944-1203-4045-a87e-2702f8ff0a44"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eqXBjwtdIQwOMK12xO/rOIlpFzejBthlTsJXt/JXWratGR1rmWJJN7th04VcNkSR1wBbbrND8ika&#13;
-eIHAquzT6g==</DigestValue></Reference></SignedInfo><SignatureValue>nsCgZ3nG+zmFWeQwjJtfmZP/uzO0D1luz/oCn5Dlqd/p57rr1rDNwuO/Ax6OqUdBMxhHPAIL900w&#13;
-RsG2rKKGKNf0r8Ij5sM2uFWlyH+3ei0XwqttC2djtPIp5ZCRUicPhsMbg7Knchhgm99TD1dlM7+0&#13;
-ZiC1TBHWIf4K7fe7IQRR38026EWXF04xnFMRvw5FxTZa16bXKKqJFySbcRYzLyQm6P7Cme69wDMI&#13;
-FIjDtIb//BuBa1iqTQM3Xbo+kkdYeLoheRD+kkV/Q9N9kJMxB5+hK2UH0XIy2lHNYpdqgjO0zEFp&#13;
-zpaKfHhj2ozZKYS6nraSYqr/jeNuIgdTsh9z3A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_301ef558-9215-4894-8093-878d62467277"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H5aztrxiNc2irh0qlcFQDWdq5xsM4qyZGeqhD0hlQOVGbsKNCuYoSxrdkRhQb2dNbZWFi5nyiQbJ&#13;
+l6V/kOqreg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_08523547-e838-4297-9899-12e69e081799"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NrS91BRyIykWthl4igHbQfaIBAx7sewr7rsQKX8jKlwCMrthw8/HvhVkos6NvHHCkJHGVg8fgw26&#13;
+QWq9Gj4qbA==</DigestValue></Reference></SignedInfo><SignatureValue>pQw7PrI4US2DFa4V3T2L2asiOgQRC7v01L5PaoqqXcriHcOJecw+68k4FsiNNMC4ZEWegmU+b/+H&#13;
+BQM72ZVCiAgQfzga7hEaFv1kMBGvRcbTRodXQOe6pjiUetXI7IIIAGGh9TpADmImqfrwiXHjYjBA&#13;
+K+gbHrLn4yAnq7VDilr8jJ3eTandIK3Lc0EQYHoaVrKIVm6xSgnfXVN5BJZvRqcso9uz+jouR9gt&#13;
+vyNmX1abgjI1kiqj/2nxyLgNjm1cOyZ7IKN/LlZY6pC05N3ttFTLuLzbxnaBuCv8hDb4uO/154yi&#13;
+JCscEbfnUvB7kWos9WNqS7NEFN6WDPv+0s6AWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -495,4 +495,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aa2f0944-1203-4045-a87e-2702f8ff0a44" Target="#_db0b8387-2dcf-482b-a404-c66573031e8d"><Timestamp>2024-06-18 11:49:13</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_08523547-e838-4297-9899-12e69e081799" Target="#_301ef558-9215-4894-8093-878d62467277"><Timestamp>2024-06-18 11:54:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
