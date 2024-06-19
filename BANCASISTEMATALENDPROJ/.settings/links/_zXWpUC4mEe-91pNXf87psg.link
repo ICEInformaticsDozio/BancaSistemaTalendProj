@@ -1,0 +1,80 @@
+{
+  "itemId" : "_zXWpUC4mEe-91pNXf87psg",
+  "contextList" : [ {
+    "contextName" : "test",
+    "repoId" : "_15dI0C1ZEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_152KaC1ZEe-PQq5u-BUFng",
+      "name" : "logger_datePlaceholder"
+    }, {
+      "id" : "_152KZi1ZEe-PQq5u-BUFng",
+      "name" : "logger_talendLogFile"
+    }, {
+      "id" : "_152KZy1ZEe-PQq5u-BUFng",
+      "name" : "logger_logFile"
+    }, {
+      "id" : "_152KaS1ZEe-PQq5u-BUFng",
+      "name" : "logger_dateFormat"
+    } ]
+  }, {
+    "contextName" : "test",
+    "repoId" : "_ao0KcC4PEe-91pNXf87psg",
+    "parameterList" : [ {
+      "id" : "_krv48S1UEe-PQq5u-BUFng",
+      "name" : "fileFilter_dateFormat"
+    }, {
+      "id" : "__aSNki1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_datePlaceholder"
+    }, {
+      "id" : "_-5lmMS1REe-PQq5u-BUFng",
+      "name" : "fileFilter_separator"
+    }, {
+      "id" : "__aSNky1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_todayOffset"
+    }, {
+      "id" : "_-5lmMi1REe-PQq5u-BUFng",
+      "name" : "fileFilter_fileFullName"
+    }, {
+      "id" : "_Bn4N0S4VEe-91pNXf87psg",
+      "name" : "fileFilter_dieOnNotFound"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_15dI0C1ZEe-PQq5u-BUFng",
+    "parameterList" : [ {
+      "id" : "_152KYy1ZEe-PQq5u-BUFng",
+      "name" : "logger_datePlaceholder"
+    }, {
+      "id" : "_152KYS1ZEe-PQq5u-BUFng",
+      "name" : "logger_talendLogFile"
+    }, {
+      "id" : "_152KYi1ZEe-PQq5u-BUFng",
+      "name" : "logger_logFile"
+    }, {
+      "id" : "_152KZC1ZEe-PQq5u-BUFng",
+      "name" : "logger_dateFormat"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_ao0KcC4PEe-91pNXf87psg",
+    "parameterList" : [ {
+      "id" : "_krv48C1UEe-PQq5u-BUFng",
+      "name" : "fileFilter_dateFormat"
+    }, {
+      "id" : "__aSNkC1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_datePlaceholder"
+    }, {
+      "id" : "_opWX8S1JEe-PQq5u-BUFng",
+      "name" : "fileFilter_separator"
+    }, {
+      "id" : "__aSNkS1TEe-PQq5u-BUFng",
+      "name" : "fileFilter_todayOffset"
+    }, {
+      "id" : "_opW_AC1JEe-PQq5u-BUFng",
+      "name" : "fileFilter_fileFullName"
+    }, {
+      "id" : "_Bn4N0C4VEe-91pNXf87psg",
+      "name" : "fileFilter_dieOnNotFound"
+    } ]
+  } ]
+}
